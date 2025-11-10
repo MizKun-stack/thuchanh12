@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Đăng kí môn thi tốt nghiệp</title>
+  <style>
+    body{font-family: Arial, Helvetica, sans-serif;background:#f7f7f7;padding:20px}
+    .container{max-width:680px;margin:18px auto;background:#fff;border:3px solid #cfcfcf;padding:18px}
+    h1{font-family: Georgia, 'Times New Roman', serif;margin:0 0 12px;font-size:28px}
+    fieldset{border:1px solid #bbb;padding:12px;margin-top:10px}
+    label{display:inline-block;margin:6px 0}
+    .row{margin:8px 0}
+    input[type=text], input[type=number], input[type=date], select{padding:6px;width:240px}
+    .small{width:120px}
+    .subjects label{display:block}
+    .actions{margin-top:12px}
+    button{padding:8px 12px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Đăng kí môn thi tốt nghiệp</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <div class="row">
+          <label for="hoten">Họ và tên:</label><br>
+          <input id="hoten" name="hoten" type="text" required placeholder="">
+        </div>
+
+        <div class="row">
+          <label for="cccd">CCCD:</label><br>
+          <input id="cccd" name="cccd" type="number" required placeholder="">
+        </div>
+
+        <div class="row">
+          <label for="dob">Ngày sinh:</label><br>
+          <input id="dob" name="dob" type="date" required>
+        </div>
+
+        <div class="row">
+          <label>Giới tính:</label><br>
+          <label><input type="radio" name="gender" value="nam" checked> Nam</label>
+          <label><input type="radio" name="gender" value="nu"> Nữ</label>
+        </div>
+
+        <div class="row subjects">
+          <label>Môn thi:</label>
+          <label><input type="checkbox" name="mon[]" value="toan"> Toán</label>
+          <label><input type="checkbox" name="mon[]" value="ngu_van"> Ngữ Văn</label>
+          <label><input type="checkbox" name="mon[]" value="ngoai_ngu"> Ngoại ngữ</label>
+        </div>
+
+        <div class="row">
+          <label for="tohop">Tổ hợp:</label><br>
+          <select id="tohop" name="tohop">
+            <option value="tn">Khoa học tự nhiên</option>
+            <option value="xh">Khoa học xã hội</option>
+          </select>
+        </div>
+
+        <div class="row actions">
+          <button type="submit">Gửi thông tin</button>
+          <button type="reset">Nhập lại</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
